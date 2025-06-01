@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lane Whichard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            background: #000000;
+            color: #ffffff;
+            font-family: 'Press Start 2P', monospace;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: default;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card {
+            text-align: center;
+        }
+
+        .name {
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .github {
+            font-size: 0.6rem;
+            font-weight: 400;
+            color: #ffffff;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+
+        .github:hover {
+            transform: scale(1.05);
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 600px) {
+            .name {
+                font-size: 1.2rem;
+            }
+            .github {
+                font-size: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 2rem 1.5rem;
+                min-width: 280px;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .email {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1 class="name">LANE<br>WHICHARD</h1>
+        <a href="https://github.com/LANEW1995" class="github" target="_blank">GITHUB.COM/LANEW1995</a>
+    </div>
+</body>
+</html>
